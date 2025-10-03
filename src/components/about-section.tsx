@@ -21,8 +21,10 @@ export function AboutSection() {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Somos uma empresa de desenvolvimento de software com paixão por
-              inovação e excelência técnica.
+              SSomos uma empresa de TICs especializada em software para gestão
+              empresarial, com foco em bancos e seguros, que entrega soluções
+              completas, personalizadas e eficientes, apoiadas por uma equipa
+              jovem e dinâmica.
             </p>
           </div>
 
@@ -35,10 +37,11 @@ export function AboutSection() {
                 Nossa Missão
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Impulsionar empresas através de soluções tecnológicas simples,
-                eficazes e inovadoras, que tornam o dia a dia mais produtivo.
-                Transformamos desafios complexos em oportunidades reais de
-                crescimento, com foco em resultados consistentes e sustentáveis.
+                Desenvolver e disponibilizar para o mercado moçambicanos e, não
+                só, software aplicacional de classe mundial para responder os
+                desafios actuais e futuros do mercado financeiro (banca e
+                seguros) e empresarial, contribuindo para a transformação
+                digital.
               </p>
             </div>
 
@@ -50,10 +53,11 @@ export function AboutSection() {
                 Nossa Visão
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ser a principal referência em desenvolvimento de software em
-                Moçambique, reconhecida pela excelência técnica, pela inovação
-                constante e pela capacidade de gerar impacto positivo.
-                Tencionamos digitalizar empresas de todos os portes e setores.
+                Ser uma empresa de referência no mercado nacional e
+                internacional, reconhecida pela excelência no desenvolvimento de
+                software aplicacional de classe mundial, oferecendo soluções
+                inovadoras, seguras e adaptadas às necessidades específicas de
+                cada cliente.
               </p>
             </div>
 
@@ -64,9 +68,9 @@ export function AboutSection() {
                 </div>
                 Valores
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-3">
                 <span className="font-semibold text-accent text-xl">E </span>
-                xcelência: qualidade em cada entrega. <br />
+                xcelência: garantimos qualidade em cada entrega. <br />
                 <span className="font-semibold text-accent text-xl">T </span>
                 ransparência: agimos com clareza e respeito. <br />
                 <span className="font-semibold text-accent text-xl ml-1">
@@ -98,8 +102,8 @@ export function AboutSection() {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Hoje, somos uma equipe de mais de 40 profissionais especializados
-              em diversas tecnologias e metodologias. Já entregamos mais de 150
+              Hoje, somos uma equipe de mais de profissionais especializados em
+              diversas tecnologias e metodologias. Já entregamos mais de 100
               projetos bem-sucedidos, sempre mantendo nosso compromisso com a
               qualidade, inovação e satisfação do cliente. Nossa jornada é
               marcada por parcerias duradouras e pela constante busca por

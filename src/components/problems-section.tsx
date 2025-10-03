@@ -85,7 +85,7 @@ export function ProblemsSection() {
             <p className="text-lg text-foreground font-medium">
               Não deixe esses problemas limitarem o potencial do seu negócio.{" "}
               <a
-                href="#contato"
+                href="#contacto"
                 className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] hover:underline "
               >
                 Fale com nossos especialistas

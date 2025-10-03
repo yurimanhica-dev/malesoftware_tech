@@ -148,12 +148,12 @@ const Footer = () => {
           <motion.div variants={itemVariants} custom={3}>
             <div className="mb-6">
               <h3 className="text-lg uppercase font-semibold mb-8">Siga-nos</h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
                 {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter].map(
                   (Icon, idx) => (
                     <div
                       key={idx}
-                      className="bg-black/90 hover:bg-[var(--primary)] p-3 rounded-full cursor-pointer"
+                      className=" p-3 rounded-full hover:bg-primary cursor-pointer"
                     >
                       <Icon className="w-4 h-4 text-white" />
                     </div>

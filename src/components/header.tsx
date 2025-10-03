@@ -32,10 +32,10 @@ export function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-background/10 backdrop-blur-md border-b border-border"
-          : "bg-transparent"
+          : "bg-background/10 backdrop-blur-md border-b border-border"
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 ">
         <div className="flex items-center justify-between h-24 ">
           <Link href="/" className="flex items-center gap-2 group opacity-90">
             <Image src="/logo.png" alt="Logo" width={100} height={100} />
@@ -78,13 +78,13 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-accent/70 backdrop-blur-md absolute top-full left-0 right-0 animate-in slide-in-from-top-2">
-            <nav className="flex flex-col gap-4">
+          <div className="md:hidden py-4">
+            <nav className="flex flex-col text-center gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                  className="text-sm font-medium text-muted-foreground uppercase hover:text-foreground transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

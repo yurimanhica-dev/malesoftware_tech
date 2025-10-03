@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import Link from "next/link";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import Button from "./Button";
 
@@ -23,8 +23,8 @@ export function HeroSection() {
         style={{ animationDelay: "1s" }}
       />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="container mx-auto px-4 lg:px-8 relative mt-12 z-10">
+        <div className="max-w-5xl mx-auto text-center ">
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 text-balance tracking-tight">
             Modernizando{" "}
@@ -41,9 +41,11 @@ export function HeroSection() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
+          <Link
+            href="#projetos"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300"
+          >
             <Button
-              onClick={() => redirect("#projetos")}
               variant="secondary"
               className="cursor-pointer group relative overflow-hidden"
               iconAfter={
@@ -57,7 +59,7 @@ export function HeroSection() {
             >
               <span className="text-lg">Nossas Soluções</span>
             </Button>
-          </div>
+          </Link>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 animate-in fade-in duration-700 delay-500">

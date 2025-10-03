@@ -5,32 +5,32 @@ export function WhyChooseUs() {
     {
       title: "Expertise Comprovada",
       description:
-        "Mais de 12 anos desenvolvendo soluções para empresas de diversos setores",
+        "Mais de 15 anos desenvolvendo soluções para empresas de diversos sectores públicos e privados.",
     },
     {
       title: "Metodologia Ágil",
       description:
-        "Entregas rápidas e iterativas com feedback contínuo do cliente",
+        "Entregas rápidas e iterativas com feedback contínuo do cliente.",
     },
     {
-      title: "Tecnologias Modernas",
+      title: "Equipe 100% Moçambicana",
       description:
-        "Utilizamos as ferramentas mais atuais e eficientes do mercado",
+        "Trabalhamos contigo, lado a lado, para garantir o sucesso de seus projectos.",
     },
     {
       title: "Suporte Dedicado",
       description:
-        "Equipe disponível para garantir o sucesso contínuo do seu projeto",
+        "Equipe disponível para garantir o sucesso contínuo do sua solução.",
     },
     {
       title: "Segurança em Primeiro Lugar",
       description:
-        "Implementamos as melhores práticas de segurança em todos os projetos",
+        "Implementamos as melhores práticas de segurança em todos as soluções.",
     },
     {
       title: "ROI Comprovado",
       description:
-        "Nossos clientes reportam redução de custos de até 40% após implementação",
+        "Nossos clientes reportam redução de custos de até 40% após implementação.",
     },
   ];
 

@@ -35,7 +35,7 @@ export function ClientLogos() {
                   alt={`Logo cliente ${index + 1}`}
                   width={150}
                   height={50}
-                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-contain grayscale-85 hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}

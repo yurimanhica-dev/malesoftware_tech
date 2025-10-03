@@ -1,24 +1,24 @@
 export function TeamSection() {
   const team = [
     {
-      name: "Ricardo Almeida",
-      role: "CEO & Co-fundador",
-      image: "/professional-male-ceo-portrait.jpg",
+      name: "Almerindo Pacule",
+      role: "Diretor de Engenharia de Software",
+      image: "/almerindo.png",
     },
     {
-      name: "Juliana Costa",
-      role: "CTO & Co-fundadora",
-      image: "/professional-female-cto-portrait.jpg",
+      name: "Denilson Thabo",
+      role: "Diretor de Segurança da Informação",
+      image: "/denilson.jpg",
     },
     {
-      name: "Fernando Santos",
-      role: "Diretor de Engenharia",
-      image: "/professional-male-engineer.png",
+      name: "Yuri Manhiça",
+      role: "Diretor de Desenvolvimento e Arquitetura de Sistemas",
+      image: "/yuri.jpg",
     },
     {
-      name: "Mariana Oliveira",
-      role: "Diretora de Produto",
-      image: "/professional-female-product-director-portrait.jpg",
+      name: "Milton Kuchenje",
+      role: "Diretor de Operações e Infraestrutura Tecnológica",
+      image: "/milton.png",
     },
   ];
 

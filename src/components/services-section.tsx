@@ -6,7 +6,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight, Code2, Cpu, Headphones, Shield } from "lucide-react";
+import {
+  ArrowRight,
+  Cloud,
+  Code2,
+  Cpu,
+  Server,
+  ShieldCheck,
+  Zap,
+} from "lucide-react";
 import Link from "next/link";
 
 export function ServicesSection() {
@@ -15,28 +23,42 @@ export function ServicesSection() {
       icon: Code2,
       title: "Desenvolvimento de Software",
       description:
-        "Criamos aplicações web e mobile personalizadas com as tecnologias mais modernas do mercado, garantindo escalabilidade e performance.",
+        "Soluções de software feitas à medida para bancos e seguradoras, aumentando eficiência e segurança, e simplificando processos internos.",
       link: "#",
     },
     {
       icon: Cpu,
-      title: "Automação de Processos",
+      title: "Consultoria Organizacional",
       description:
-        "Automatizamos fluxos de trabalho complexos, reduzindo custos operacionais e aumentando a eficiência da sua empresa.",
+        "Optimização de processos e alinhamento estratégico para potenciar inovação e crescimento no setor financeiro.",
       link: "#",
     },
     {
-      icon: Shield,
-      title: "Infraestrutura & Segurança",
+      icon: ShieldCheck,
+      title: "Software como Serviço (SaaS)",
       description:
-        "Implementamos arquiteturas cloud robustas e seguras, com monitoramento 24/7 e proteção contra ameaças cibernéticas.",
+        "Acesso flexível às nossas aplicações, sem instalação local, com manutenção contínua, actualizações automáticas e escalabilidade garantida.",
       link: "#",
     },
     {
-      icon: Headphones,
-      title: "Suporte Técnico Especializado",
+      icon: Server,
+      title: "Infraestrutura de Dados",
       description:
-        "Oferecemos suporte contínuo e manutenção proativa para garantir que seus sistemas operem com máxima disponibilidade.",
+        "Fornecemos, montamos e operamos infra-estrutura robusta, tanto no ambiente do cliente (on-premise) como na nuvem, garantindo desempenho e segurança.",
+      link: "#",
+    },
+    {
+      icon: Cloud,
+      title: "Segurança Física e Lógica",
+      description:
+        "Instalação e configuração de soluções de segurança completas, protegendo dados e activos contra acessos não autorizados.",
+      link: "#",
+    },
+    {
+      icon: Zap,
+      title: "Automação e Integração de Sistemas",
+      description:
+        "Integramos sistemas e automatizamos processos críticos, reduzindo erros, acelerando operações e aumentando a produtividade de sua organização.",
       link: "#",
     },
   ];
@@ -65,13 +87,13 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card
                 key={index}
-                className="group hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 bg-card/50 backdrop-blur-sm"
+                className="group relative hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 bg-card/50 backdrop-blur-sm"
               >
                 <CardHeader>
                   <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -88,7 +110,7 @@ export function ServicesSection() {
                   <Button
                     variant="link"
                     asChild
-                    className="text-primary p-0 h-auto group/link"
+                    className="absolute bottom-3 left-4 text-primary p-0 h-auto group/link"
                   >
                     <Link href={service.link}>
                       Veja mais

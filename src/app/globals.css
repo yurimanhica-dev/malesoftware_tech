@@ -206,3 +206,15 @@
   animation: scroll-left 25s linear infinite;
   width: max-content;
 }
+
+@keyframes loading-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
