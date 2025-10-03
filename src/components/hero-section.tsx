@@ -23,7 +23,7 @@ export function HeroSection() {
         style={{ animationDelay: "1s" }}
       />
 
-      <div className="container mx-auto px-4 lg:px-8 relative mt-20 z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative mt-40 z-10">
         <div className="max-w-5xl mx-auto text-center ">
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 text-balance tracking-tight">
