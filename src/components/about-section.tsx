@@ -75,7 +75,7 @@ export function AboutSection() {
                 novação: criamos soluções criativas e eficazes. <br />
                 <span className="font-semibold text-accent text-xl">C </span>
                 olaboração: valorizamos o trabalho em equipe. <br />
-                <span className="font-semibold text-accent text-xl">A </span>
+                <span className="font-semibold text-accent text-xl">A</span>
                 gilidade: rapidez e eficiência nas soluções.
               </p>
             </div>

@@ -7,7 +7,7 @@ const Button = (
     iconAfter?: ReactNode;
   } & ButtonHTMLAttributes<HTMLButtonElement>
 ) => {
-  const { className, children, variant, iconAfter, ...rest } = props;
+  const { className, children, variant, iconAfter } = props;
   return (
     <button
       className={twMerge(
