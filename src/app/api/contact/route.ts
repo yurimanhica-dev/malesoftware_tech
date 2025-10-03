@@ -41,9 +41,9 @@ export async function POST(request: Request) {
 
           <!-- Header -->
           <tr>
-            <td style="background-color: #f8fafc; border-radius: 12px; border-bottom: 2px solid #0e6995; padding: 40px 30px; text-align: center;">
+            <td style="background-color: #0e6995; border-radius: 12px; border-bottom: 2px solid #0e6995; padding: 40px 30px; text-align: center;">
               <img src="https://dbmib2q8rj.ufs.sh/f/Lm6xK3J7O1CLs5bbxpmhFqC6Gr21nTsKlL7BbvpdeHX3uwMi" alt="Logo" style="max-width: 150px; height: auto; margin-bottom: 20px;">
-              <h1 style="margin: 0; color: #0e6995; font-size: 26px; font-weight: 600; letter-spacing: -0.5px;">
+              <h1 style="margin: 0; color: #ffff; font-size: 26px; font-weight: 600; letter-spacing: -0.5px;">
                 Confirmação de Recepção
               </h1>
             </td>
@@ -122,9 +122,9 @@ export async function POST(request: Request) {
                 
                 <!-- Header -->
                 <tr>
-                  <td style="background-color: #f8fafc; border-radius: 12px;  padding: 40px 30px; text-align: center; border-bottom: 2px solid #0e6995;">
+                  <td style="background-color: #0e6995; border-radius: 12px;  padding: 40px 30px; text-align: center; border-bottom: 2px solid #0e6995;">
                     <img src="https://dbmib2q8rj.ufs.sh/f/Lm6xK3J7O1CLs5bbxpmhFqC6Gr21nTsKlL7BbvpdeHX3uwMi" alt="Logo" style="max-width: 150px; height: auto; margin-bottom: 20px;">
-                    <h1 style="margin: 0; color: #0e6995; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">Nova Mensagem Recebida</h1>
+                    <h1 style="margin: 0; color: #ffff; font-size: 28px; font-weight: 600; letter-spacing: -0.5px;">Nova Mensagem Recebida</h1>
                   </td>
                 </tr>
 

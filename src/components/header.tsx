@@ -78,7 +78,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-in slide-in-from-top-2">
+          <div className="md:hidden py-4 border-t border-border bg-accent/70 backdrop-blur-md absolute top-full left-0 right-0 animate-in slide-in-from-top-2">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
@@ -92,13 +92,10 @@ export function Header() {
               ))}
               <Button
                 asChild
-                className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] mt-2"
+                className="bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]"
               >
-                <Link
-                  href="#contacto"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Agendar Consultoria
+                <Link href="#contacto">
+                  <h1>Agendar Consultoria</h1>
                 </Link>
               </Button>
             </nav>
