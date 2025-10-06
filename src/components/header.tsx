@@ -19,12 +19,10 @@ export function Header() {
   }, []);
 
   const navItems = [
+    { label: "Sobre Nós", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
     { label: "Projetos", href: "#projetos" },
-    { label: "Sobre Nós", href: "#sobre" },
-    { label: "Equipe", href: "#equipe" },
     { label: "Contactos", href: "#contacto" },
-    { label: "Distinções", href: "#distincoes" },
   ];
 
   return (

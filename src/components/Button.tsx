@@ -14,7 +14,7 @@ const Button = (
         "h-auto px-10 py-2 border-2 border-primary/40 hover:bg-primary/10 bg-transparent rounded-full shadow-md flex justify-between items-center gap-2 group/button",
         variant === "primary" && "bg-terciar/80 hover:text-accent-foreground",
         variant === "secondary" &&
-          "hover:bg-primary hover:text-accent-foreground ",
+          "bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]",
         variant === "text" && "h-auto px-0 border-transparent",
         className
       )}

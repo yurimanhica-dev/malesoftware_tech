@@ -64,10 +64,10 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 animate-in fade-in duration-700 delay-500">
             {[
-              { value: "150+", label: "Projetos Entregues" },
+              { value: "50+", label: "Projetos Entregues" },
               { value: "98%", label: "Satisfação do Cliente" },
-              { value: "12+", label: "Anos de Experiência" },
-              { value: "50+", label: "Clientes Ativos" },
+              { value: "15+", label: "Anos de Experiência" },
+              { value: "30+", label: "Clientes Ativos" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <h2 className="text-3xl md:text-5xl font-semibold text-primary/60 mb-2">

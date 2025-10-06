@@ -1,44 +1,48 @@
 "use client";
 
-import { Award, Medal, Star, Trophy } from "lucide-react";
+import { Award, Building2, Medal, Plus, Star } from "lucide-react";
 
 export function AwardsSection() {
   const timeline = [
+    // {
+    //   year: "2024",
+    //   title: "Melhor Empresa de Tecnologia",
+    //   description: "Prêmio Tech Excellence",
+    //   icon: Trophy,
+    // },
+    // {
+    //   year: "2023",
+    //   title: "Top 10 Startups de Software",
+    //   description: "Revista Inovação Digital",
+    //   icon: Star,
+    // },
     {
-      year: "2024",
-      title: "Melhor Empresa de Tecnologia",
-      description: "Prêmio Tech Excellence Brasil",
-      icon: Trophy,
-    },
-    {
-      year: "2023",
-      title: "Top 10 Startups de Software",
-      description: "Revista Inovação Digital",
-      icon: Star,
-    },
-    {
-      year: "2022",
-      title: "Certificação ISO 27001",
-      description: "Segurança da Informação",
+      year: "2025",
+      title: "Informações por Recolher",
+      description: "Informações por Recolher ",
       icon: Medal,
-    },
-    {
-      year: "2021",
-      title: "Prêmio Inovação em Cloud",
-      description: "AWS Partner Awards",
-      icon: Award,
+      clients: 30,
     },
     {
       year: "2020",
-      title: "Empresa Revelação",
-      description: "Associação Brasileira de Software",
-      icon: Star,
+      title: "Revamping das Soluções",
+      description: "Novas soluções para desafios tragos pela pandemia",
+      icon: Award,
+      clients: 20,
     },
     {
-      year: "2019",
-      title: "Melhor Projeto de Transformação Digital",
-      description: "Digital Transformation Summit",
-      icon: Trophy,
+      year: "2015",
+      title: "Consolidação no Mercado",
+      description: "Reconhecimento pela excelência em soluções de software",
+      icon: Star,
+      clients: 10,
+    },
+    {
+      year: "2010",
+      title: "Criação da MaleSoftware",
+      description: "Fundação da empresa",
+      icon: Building2,
+      clients: 5,
     },
   ];
 
@@ -53,17 +57,18 @@ export function AwardsSection() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] hover:drop-shadow-[0_0_15px_rgba(118,181,197,0.7)]">
-                Distinções e Reconhecimentos
+                Nossas Jornada
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Nossa jornada de excelência é reconhecida pelo mercado.
+              Uma linha do tempo destacando marcos importantes e conquistas ao
+              longo dos anos.
             </p>
           </div>
 
           {/* Timeline */}
           <div className="relative">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-4 gap-8">
               {timeline.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -81,6 +86,12 @@ export function AwardsSection() {
                     <p className="text-sm text-muted-foreground mt-1">
                       {item.description}
                     </p>
+                    <h1 className="block text-lg mt-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
+                      <span>
+                        <Plus className="w-4 h-4 text-accent inline-block" />
+                      </span>{" "}
+                      {item.clients} Clientes
+                    </h1>
                   </div>
                 );
               })}

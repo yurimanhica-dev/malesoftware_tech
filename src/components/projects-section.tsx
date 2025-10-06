@@ -6,7 +6,7 @@ import Link from "next/link";
 export function ProjectsSection() {
   const projects = [
     {
-      title: "Sistema de Gestão de Correctoras Seguros",
+      title: "MS6 - Corretoras de Seguros",
       category: "Seguros",
       description:
         "Sistema de gestão de correctoras para seguros de automóveis, residenciais e empresariais, com integração a APIs de seguradoras.",
@@ -14,43 +14,43 @@ export function ProjectsSection() {
       link: "#",
     },
     {
-      title: "E-commerce Multicanal",
-      category: "Varejo",
+      title: "MBanka - Banco Digital",
+      category: "Banca",
       description:
-        "Solução de comércio eletrônico integrada com marketplaces, ERP e sistemas de logística para grande varejista nacional.",
-      image: "/ecommerce-platform-interface-modern-design.jpg",
+        "Plataforma bancária digital completa com abertura de conta, transferências, pagamentos e investimentos, focada na experiência do usuário.",
+      image: "/ms6.png",
       link: "#",
     },
     {
-      title: "Plataforma de Educação Online",
-      category: "Educação",
+      title: "MCrédito - Plataforma de Empréstimos",
+      category: "Crédito",
       description:
-        "Sistema de ensino à distância com videoconferência, gamificação e acompanhamento de desempenho para instituição de ensino.",
-      image: "/online-education-platform.png",
+        "Sistema de gestão de empréstimos pessoais e empresariais, com análise de crédito automatizada e gestão de pagamentos.",
+      image: "/ms6.png",
       link: "#",
     },
     {
-      title: "Sistema Bancário Digital",
-      category: "Fintech",
+      title: "Mkonta - Módulo de Contabilidade",
+      category: "Contabilidade",
       description:
         "Aplicativo mobile e web para banco digital com abertura de conta, transferências, investimentos e cartão virtual.",
-      image: "/digital-banking-app-interface-modern.jpg",
+      image: "/ms6.png",
       link: "#",
     },
     {
-      title: "Sistema de Gestao de Recursos Humanos",
+      title: "MRH - Gestão de Recursos Humanos",
       category: "Recursos Humanos",
       description:
         "Plataforma completa para gestão de talentos, folha de pagamento, benefícios e avaliação de desempenho.",
-      image: "/industrial-iot-dashboard-monitoring.jpg",
+      image: "/ms6.png",
       link: "#",
     },
     {
-      title: "CRM Inteligente com IA",
-      category: "Vendas",
+      title: "MPortal - Portal Corporativo",
+      category: "Portal Corporativo",
       description:
-        "Plataforma de gestão de relacionamento com clientes potencializada por inteligência artificial para previsão de vendas.",
-      image: "/ai-crm-dashboard-interface.jpg",
+        "Portal corporativo para clientes e parceiros, com acesso a serviços, suporte e informações personalizadas.",
+      image: "/ms6.png",
       link: "#",
     },
   ];
@@ -59,7 +59,7 @@ export function ProjectsSection() {
     <section id="projetos" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/blue-matrix-code-technology-background-abstract.jpg"
+          src="/blue-matrix-code-technology-background-abstract.png"
           alt=""
           className="w-full h-full object-cover opacity-5"
         />
@@ -91,9 +91,9 @@ export function ProjectsSection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 uppercase tracking-widest rounded-full bg-primary/90 text-primary-foreground text-xs font-semibold">
+                  <h5 className="px-3 py-1 uppercase tracking-widest rounded-full bg-primary/90 text-primary-foreground text-xs font-semibold">
                     {project.category}
-                  </span>
+                  </h5>
                 </div>
               </div>
               <CardContent className="p-6">
@@ -106,7 +106,7 @@ export function ProjectsSection() {
                 <Button
                   variant="link"
                   asChild
-                  className="text-primary p-0 h-auto group/link"
+                  className="text-primary absolute bottom-4 p-0 h-auto group/link"
                 >
                   <Link href={project.link}>
                     Mais detalhes

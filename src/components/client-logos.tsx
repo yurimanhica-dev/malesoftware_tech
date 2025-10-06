@@ -9,9 +9,14 @@ export function ClientLogos() {
     "/logos/FFH.png",
     "/logos/Maleseguros_dark.png",
     "/logos/bdq-removebg-preview.png",
-    "/logos/teka.png",
-    "/logos/cfm.png",
-    "/logos/MCAIXA.png",
+    "/logos/bni.png",
+    "/logos/Genesis.png",
+    "/logos/FFH.png",
+    "/logos/Maleseguros_dark.png",
+    "/logos/bdq-removebg-preview.png",
+    // "/logos/teka.png",
+    // "/logos/cfm.png",
+    // "/logos/MCAIXA.png",
   ];
 
   const duplicatedClients = [...clients, ...clients];
@@ -35,7 +40,7 @@ export function ClientLogos() {
                   alt={`Logo cliente ${index + 1}`}
                   width={150}
                   height={50}
-                  className="object-contain grayscale-85 hover:grayscale-0 transition-all duration-300"
+                  className="object-contain bluescale-85 hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}

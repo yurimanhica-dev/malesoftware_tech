@@ -25,7 +25,7 @@ const Footer = () => {
   const contact = [
     {
       icon: <MapPinIcon className="mr-2 text-[var(--primary)]/50" />,
-      text: " Av. Vladimir Lenine, 2815 - Maputo, Moçambique",
+      text: "Av. Vladimir Lenine, 2815 - Maputo, Moçambique",
       href: "https://maps.app.goo.gl/K9ZgTB1qbCjpz13Y6",
     },
     {
@@ -63,7 +63,43 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[var(--background)] border-t border-[var(--border)] relative overflow-hidden z-20">
+    <footer className="relative bg-background overflow-hidden border-t border-[var(--border)] z-20">
+      {/* 🔹 Fundo Tech Animado */}
+      <div className="absolute inset-0">
+        <img
+          src="/circuit-board-technology-blue-abstract-pattern.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-10"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/10 to-background" />
+      <div className="starfield" />
+      {/* 🔹 Partículas flutuantes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(15)].map((_, i) => (
+          <motion.span
+            key={i}
+            className="absolute w-1 h-1 bg-primary/40 rounded-full blur-[2px]"
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+              opacity: 0.3 + Math.random() * 0.5,
+            }}
+            animate={{
+              y: [Math.random() * 100, -100],
+              opacity: [0.5, 0],
+            }}
+            transition={{
+              duration: 6 + Math.random() * 8,
+              delay: Math.random() * 3,
+              repeat: Infinity,
+              ease: "easeOut",
+            }}
+          />
+        ))}
+      </div>
+
+      {/* 🔹 Conteúdo */}
       <div className="container mx-auto px-4 lg:px-8 pt-16 relative z-10">
         <motion.div
           initial="hidden"
@@ -72,28 +108,26 @@ const Footer = () => {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
         >
-          {/* Coluna 1: Logo + descrição + redes sociais */}
+          {/* Coluna 1 */}
           <motion.div variants={itemVariants} custom={0}>
             <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            <p className="text-[var(--foreground)]/80 my-4">
-              Somos líderes em soluções tecnológicas inovadoras, dedicada a
+            <p className="text-[var(--foreground)]/80 my-4 leading-relaxed">
+              Somos líderes em soluções tecnológicas inovadoras, dedicados a
               transformar negócios através da digitalização e automação.
             </p>
             <Link
               href="#contacto"
               className="inline-flex items-center gap-2 group"
             >
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] h-auto group-hover:underline">
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] group-hover:underline">
                 Saber Mais
               </h1>
-              <span>
-                <ArrowRight className="w-5 h-5 text-accent transition-transform duration-300 group-hover:translate-x-1" />
-              </span>
+              <ArrowRight className="w-5 h-5 text-accent transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </motion.div>
 
-          {/* Coluna 2: Contact */}
-          <motion.div variants={itemVariants} custom={2}>
+          {/* Coluna 2 */}
+          <motion.div variants={itemVariants} custom={1}>
             <h3 className="text-lg uppercase font-semibold mb-6">Contactos</h3>
             <ul className="space-y-3">
               {contact.map((c, index) => (
@@ -101,27 +135,24 @@ const Footer = () => {
                   key={index}
                   variants={itemVariants}
                   custom={index + 1}
-                  className="relative items-start"
+                  className="relative flex items-start"
                 >
                   <Link
                     href={c.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-2 group"
                   >
                     {c.icon}
-                    <span className="whitespace-pre-line text-foreground/80">
-                      {c.text}
-                    </span>
-                    <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                    <span className="text-foreground/80">{c.text}</span>
                   </Link>
                 </motion.li>
               ))}
             </ul>
           </motion.div>
 
-          {/* Coluna 3: Explore */}
-          <motion.div variants={itemVariants} custom={1}>
+          {/* Coluna 3 */}
+          <motion.div variants={itemVariants} custom={2}>
             <h3 className="text-lg uppercase font-semibold mb-6">
               Links Úteis
             </h3>
@@ -135,7 +166,7 @@ const Footer = () => {
                 >
                   <Link
                     href={item.href}
-                    className="nav-link hover:text-primary text-foreground/80 transition-colors"
+                    className="hover:text-primary text-foreground/80 transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -144,27 +175,26 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Coluna 4: Redes sociais + endereço */}
+          {/* Coluna 4 */}
           <motion.div variants={itemVariants} custom={3}>
-            <div className="mb-6">
-              <h3 className="text-lg uppercase font-semibold mb-8">Siga-nos</h3>
-              <div className="flex space-x-4 bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
-                {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter].map(
-                  (Icon, idx) => (
-                    <div
-                      key={idx}
-                      className=" p-3 rounded-full hover:bg-primary cursor-pointer"
-                    >
-                      <Icon className="w-4 h-4 text-white" />
-                    </div>
-                  )
-                )}
-              </div>
+            <h3 className="text-lg uppercase font-semibold mb-8">Siga-nos</h3>
+            <div className="flex space-x-4">
+              {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter].map(
+                (Icon, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    className="p-3 rounded-full bg-primary/10 hover:bg-primary/30 cursor-pointer transition"
+                  >
+                    <Icon className="w-4 h-4 text-primary" />
+                  </motion.div>
+                )
+              )}
             </div>
           </motion.div>
         </motion.div>
 
-        {/* Divider */}
+        {/* Linha divisória */}
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
@@ -178,38 +208,30 @@ const Footer = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ delay: 0.4 }}
             className="text-sm text-[var(--muted-foreground)]/80 text-center md:text-left"
           >
             © {new Date().getFullYear()} MALEholding. Todos os direitos
             reservados.
           </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ delay: 0.6 }}
             className="flex items-center space-x-6"
           >
-            <Link
-              href="#"
-              className="group underline-link relative block text-sm hover:text-[var(--primary)] transition-colors"
-            >
-              Termos de Serviço
-            </Link>
-            <Link
-              href="#"
-              className="group underline-link relative block text-sm hover:text-[var(--primary)] transition-colors"
-            >
-              Política de Privacidade
-            </Link>
-            <Link
-              href="#"
-              className="group underline-link relative block text-sm hover:text-[var(--primary)] transition-colors"
-            >
-              Cookies
-            </Link>
+            {["Termos de Serviço", "Política de Privacidade", "Cookies"].map(
+              (link, idx) => (
+                <Link
+                  key={idx}
+                  href="#"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  {link}
+                </Link>
+              )
+            )}
           </motion.div>
         </div>
       </div>
